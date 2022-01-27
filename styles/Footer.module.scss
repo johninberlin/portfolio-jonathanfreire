@@ -1,0 +1,51 @@
+.root{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background: #fafafa;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 50px auto;
+}
+.message{
+    margin-bottom: 25px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: "5px 10px";
+    a{
+        color: #297eb6;
+    }
+}
+.socialMedia{
+    span{
+        display: flex;
+    }
+    a:first-of-type{
+        margin: 0 10px;
+    }
+}
+.iconHeart{
+    width: 0.8rem;
+    color: #297eb6;
+}
+.iconSocialMedia{
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 570px){
+    .content{
+        p{
+            font-size: 1rem;
+        }
+    }
+}

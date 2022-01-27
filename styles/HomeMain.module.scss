@@ -1,0 +1,77 @@
+/* Variables */
+@mixin display-justify-content($display, $content){
+    display: $display;
+    justify-content: $content;
+}
+
+/* Containers */
+.root{
+    background-color: #b3c2be;
+    padding: 0 4%;
+    height: 410px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+/* Content */
+.content{
+    @include display-justify-content(flex, flex-start);
+    height: 100%;
+    color: white;
+}
+.title{
+    margin:auto 0;
+    z-index: 100;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(128, 128, 128);
+    p{
+        font-size: 2.3rem;
+        line-height: 45px;
+        strong{
+            font-weight: 700;
+        }
+    }
+}
+
+/* Graphics */
+.graphics{
+    position: absolute;
+    width: 320px;
+    bottom:0;
+    right: -100px;
+}
+.image{
+    filter: drop-shadow(-1px -2px 3px rgb(108, 108, 108));
+}
+@media (min-width: 390px){
+    .graphics{
+        width: 350px;
+    }
+}
+@media (min-width: 570px){
+    .root{
+        overflow-x: visible;
+    }
+    .title{
+        p{
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 80px;
+            strong{
+                font-weight: 900;
+            }
+        }
+    }
+    .graphics{
+        width: 450px;
+        right: 0;
+    }
+    .root{
+        height: 500px;
+    }
+}
+@media (min-height: 700px){
+    .root{
+        height: 500px;
+    }
+}

@@ -1,0 +1,48 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  color:#23262b;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3, h4, h5, h6{
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p{
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+select{
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 570px){
+  p{
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+  h2{
+    font-size: 1.9rem;
+  }
+  h3, h4, h5, h6{
+    font-size: 1.4rem;
+  }
+  select{
+    font-size: 1.05rem;
+  }
+}
