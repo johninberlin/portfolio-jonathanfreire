@@ -50,12 +50,12 @@ Clone down this repository. You will need `node.js` and `git` installed globally
 ## 🛠 Installation and Setup Instructions
 
 1. Installation: `npm install`
-2. Create a .env file with: `TRANSPORTER_USER` and `TRANSPORTER_PASSWORD`
+2. Edit the .env.development file in the parameters: `TRANSPORTER_USER` and `TRANSPORTER_PASSWORD`
 You will need an user and password from Gmail. Read the documentation about nodemailer with Gmail [here](https://nodemailer.com/usage/using-gmail/)
 2. In the project directory, you can run: `npm start` or `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [localhost:3000](localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
 ## Usage Instructions
@@ -66,6 +66,7 @@ You will find all the components used and you can edit your information accordin
 ### Show your support
 
 Give a ⭐ if you like this website!
+
 ## License
 
 MIT
