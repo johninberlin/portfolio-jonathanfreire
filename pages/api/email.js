@@ -46,9 +46,9 @@ export default async function email(req, res) {
     if(err){
       console.log(err);
     }else{
-      console.log("sended");
-      smtpTransport.close();
+      console.log(info);
     }
+    smtpTransport.close();
   })
   res.status(200).json({});
 }
