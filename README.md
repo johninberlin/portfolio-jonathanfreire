@@ -30,9 +30,7 @@ This project was built using these technologies.
 - Node.js
 - Next.js
 - Sass
-- nodemailer
-- googleapis
-- Google OAuth2
+- Sendgrid
 - react-cookie-consent
 - VsCode
 - Vercel
@@ -52,8 +50,8 @@ Clone down this repository. You will need `node.js` and `git` installed globally
 ## 🛠 Installation and Setup Instructions
 
 1. Installation: `npm install`
-2. You have to create a .env.development file in the parameters: `SENDER_EMAIL_ADDRESS`, `MAILING_SERVICE_CLIENT_ID`, `MAILING_SERVICE_CLIENT_SECRET` and `MAILING_SERVICE_REFRESH_TOKEN`
-You will need to create a new project in Google cloud console. This will enable you to create credentials to send emails via nodemailer. There is a good article which explains this process. I let you the link [here](https://alexb72.medium.com/how-to-send-emails-using-a-nodemailer-gmail-and-oauth2-fe19d66451f9).
+2. You have to create a .env.development file in the parameters: `SENDER_EMAIL_ADDRESS`and `SENDGRID_API_KEY`
+You will need to create an account in Sendgrid. Or you can edit the code on api/email.js to use another SMTP.
 2. In the project directory, you can run: `npm start` or `npm run dev`
 
 Runs the app in the development mode.\
