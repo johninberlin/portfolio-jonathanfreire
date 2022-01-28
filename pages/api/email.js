@@ -40,6 +40,9 @@ export default async function email(req, res) {
         refreshToken: MAILING_SERVICE_REFRESH_TOKEN,
         accessToken,
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
     return smtpTransport;
   }
