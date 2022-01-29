@@ -78,9 +78,9 @@ export default function Contact(){
             <p className={styles.greeting}>{t.greeting.hi} {form.name !=="" ? form.name : t.greeting.name}!</p>
             <form autoComplete="off" className={styles.form}>
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Jonathan" value={form.name} onChange={handleChange} required />
+                <input type="text" id="name" name="name" placeholder={t.name.placeholder} value={form.name} onChange={handleChange} required />
                 <label htmlFor="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="hello@email.com" value={form.email} onChange={handleChange} required />
+                <input type="email" id="email" name="email" placeholder={t.email.placeholder} value={form.email} onChange={handleChange} required />
                 <label htmlFor="message">{t.message.label}</label>
                 <textarea rows="5" cols="50" onChange={handleChange} name="message" placeholder={t.message.placeholder} value={form.message}></textarea>
                 <label>

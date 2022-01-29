@@ -17,6 +17,11 @@ const en = {
             "hi": "Hi",
             "name" : "there"
         },
+        "name" : {
+            "placeholder" : "Introduce your name"
+        },"email" : {
+            "placeholder" : "Introduce your e-mail"
+        },
         "message" : {
             "label" : "Message:",
             "placeholder" : "Let's talk"
@@ -44,7 +49,7 @@ const en = {
     "homeMain": {
         "title" : {
             "hi" : "Hi you,",
-            "jr" : "I am Jr.",
+            "jr" : "I am a Jr.",
             "strong" : "Full Stack Developer",
             "base" : "based in Berlin"
         }

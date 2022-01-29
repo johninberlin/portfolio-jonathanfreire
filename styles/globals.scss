@@ -25,10 +25,11 @@ p{
   font-size: 0.9rem;
   line-height: 1.7rem;
 }
-select{
-  font-weight: 500;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+
+input[type=text]::placeholder,
+  input[type=email]::placeholder,
+  textarea::placeholder{
+    color: rgb(204, 204, 204);
 }
 
 @media (min-width: 570px){
@@ -41,8 +42,5 @@ select{
   }
   h3, h4, h5, h6{
     font-size: 1.4rem;
-  }
-  select{
-    font-size: 1.05rem;
   }
 }

@@ -62,6 +62,9 @@
             opacity: 0.75;
         }
     }
+    input[type=checkbox]{
+        outline: none;
+    }
 }
 .linkPrivacyPolicy{
     color: #297eb6;

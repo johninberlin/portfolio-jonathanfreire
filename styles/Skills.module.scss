@@ -35,6 +35,7 @@
     margin-bottom: 20px;
     svg{
         height: 50px;
+        width: 50px !important; // it needs it in production
         color: #297eb6;
     }
 }
@@ -58,6 +59,7 @@
     .symbolSkill{
         svg{
             height: 60px;
+            width: 60px !important; // it needs it in production
         }
     }
 }

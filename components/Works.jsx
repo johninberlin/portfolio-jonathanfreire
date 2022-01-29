@@ -17,7 +17,7 @@ export default function Works(){
                 <p>{t.title.p}</p>
             </div>
             <div className={styles.projects}>
-                <Link href="">
+                <Link href="https://socialart.jonathanfreire.com">
                     <div className={styles.project}>
                         <Image
                         src="/social-art.png"    
@@ -30,17 +30,17 @@ export default function Works(){
                         <p>Social Art</p>
                     </div>
                 </Link>
-                <Link href="">
+                <Link href="https://timequiz.jonathanfreire.com">
                     <div className={styles.project}>
                         <Image
-                        src="/time-quizz.png"    
-                        alt="time-quizz"
+                        src="/time-quiz.png"    
+                        alt="time-quiz"
                         priority="true"
                         layout="fill"
                         objectFit="cover"
                         quality={100}
                         />
-                        <p>Time Quizz</p>
+                        <p>Time Quiz</p>
                     </div>
                 </Link>
             </div>
