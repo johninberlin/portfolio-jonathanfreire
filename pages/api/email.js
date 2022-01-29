@@ -12,12 +12,17 @@ export default async function email(req, res) {
     html: `<div><p>${message}</p></div>`
   }
 
-  mail.send(mailData).then(() => {}, error => {
-    console.error(error);
-
-    if (error.response) {
-      console.error(error.response.body)
-    }
-  });
-  res.status(200).json({});
+  try{
+    await mail.send(mailData).then(() => {}, error => {
+      console.error(error);
+  
+      if (error.response) {
+        console.error(error.response.body)
+      }
+    });
+    res.status(200).send('Message sent successfully.')
+  }catch(e){
+    console.log('ERROR', error)
+    res.status(400).send('Message not sent.')
+  }
 }
