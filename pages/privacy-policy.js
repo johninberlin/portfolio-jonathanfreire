@@ -15,7 +15,6 @@ export default function Home() {
       <Head>
         <title>Jonathan Freire</title>
         <meta name="description" content={t.headContent} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout title="Jonathan Freire." subtitle={t.subtitle} refTitle="/" firstRef="/#works" firstName={t.firstName} secondRef="#contact" secondName={t.secondName}>
         <div className={styles.root}>
