@@ -2,7 +2,7 @@
 export default async function email(req, res) {
   const mail = require("@sendgrid/mail");
   mail.setApiKey(process.env.SENDGRID_API_KEY);
-  
+  console.log(process.env.SENDGRID_API_KEY);
   const {name, email, message} = req.body;
   const mailData = {
     from : process.env.SENDER_EMAIL_ADDRESS,
