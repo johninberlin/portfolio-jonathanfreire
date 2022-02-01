@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import NavbarCollapse from "./NavbarCollapse";
 import MenuResponsive from "./MenuResponsive";
 import ButtonNavbar from "./ButtonNavbar";
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar({title, subtitle, refTitle, firstRef, firstName, secondRef, secondName}){
     const [windowWidth, setWindowWidth] = useState(0);
@@ -34,7 +35,7 @@ export default function Navbar({title, subtitle, refTitle, firstRef, firstName, 
     }, []);
 
     useEffect(()=>{
-        if(windowWidth > 800){
+        if(windowWidth > 700){
             setOpenMenuResponsive(false);
         }
     },[windowWidth])
@@ -52,18 +53,18 @@ export default function Navbar({title, subtitle, refTitle, firstRef, firstName, 
                 </Link>
             </div>
             <div className={styles.menu}>
-                {windowWidth > 800 ?
+                {windowWidth > 700 ?
                     <div className={styles.nav}>
                         <ButtonNavbar link={firstRef} name={firstName} />
                         <ButtonNavbar link={secondRef} name={secondName} />
                     </div>
                 :   
-                    <NavbarCollapse openMenuResponsive={openMenuResponsive} handleClick={handleOpenCollapseMenu} />
+                    <NavbarCollapse handleClick={handleOpenCollapseMenu} fa={faBars} />
                 }
             </div>
         </div>
-        {openMenuResponsive && windowWidth <= 800 &&
-            <MenuResponsive links={links} onClick={handleOpenCollapseMenu} />
+        {windowWidth <= 700 &&
+            <MenuResponsive links={links} onClick={handleOpenCollapseMenu} openMenuResponsive={openMenuResponsive} handleOpenCollapseMenu={handleOpenCollapseMenu} />
         }
     </div>
 }
