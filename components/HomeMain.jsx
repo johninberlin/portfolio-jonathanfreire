@@ -19,7 +19,7 @@ export default function HomeMain(){
         </div>
         <div className={styles.graphics}>
             <Image 
-                src="/pensador.png"
+                src="https://res.cloudinary.com/ddjovluur/image/upload/v1643727241/portfolio/pensador_yuwo9o.png"
                 alt="The Thinker"
                 layout="responsive"
                 priority="true"

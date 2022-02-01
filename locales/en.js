@@ -2,7 +2,7 @@ const en = {
     "index": {
         "headContent" : "I and my skills",
         "subtitle": "Developer",
-        "firstName" : "Works.",
+        "firstName" : "Projects.",
         "secondName" : "Contact."
     },
     "aboutMe": {

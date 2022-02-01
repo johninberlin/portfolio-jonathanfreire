@@ -20,7 +20,7 @@ export default function Works(){
                 <Link href="https://socialart.jonathanfreire.com">
                     <div className={styles.project}>
                         <Image
-                        src="/social-art.png"    
+                        src="https://res.cloudinary.com/ddjovluur/image/upload/v1643727233/portfolio/social-art_ri7fow.png"    
                         alt="social-art"
                         priority="true"
                         layout="fill"
@@ -33,7 +33,7 @@ export default function Works(){
                 <Link href="https://timequiz.jonathanfreire.com">
                     <div className={styles.project}>
                         <Image
-                        src="/time-quiz.png"    
+                        src="https://res.cloudinary.com/ddjovluur/image/upload/v1643727231/portfolio/time-quiz_drc3dt.png"    
                         alt="time-quiz"
                         priority="true"
                         layout="fill"
