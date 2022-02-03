@@ -4,7 +4,7 @@ import styles from "../styles/CustomCookieConsent.module.scss"
 
 export default function CustomCookieConsent(){
     return <CookieConsent 
-    debug={true} 
+    debug={false} 
     location="bottom" 
     cookieName="jonathanfreire-CookieConsent"
     buttonText="I understand and I accept the use of cookies" 

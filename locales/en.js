@@ -8,7 +8,7 @@ const en = {
     "aboutMe": {
         "title" : "Hello, I'm Jonathan.",
         "p1" : "I am a student of Engineering Informatics. I also study German to adapt to my new home, Berlin.",
-        "p2" : "I speak Spanish as my mother language but also I speak English B2 and German B1.",
+        "p2" : "Spanish is my mother language but also I speak English B2 and German B1.",
         "p3" : 'Last year, I did a "Web development bootcamp" on Udemy where I learnt a MERN stack. After this course I was learning more technologies like Next.js by myself only reading their documentations.',
         "p4" : "Now, I am ready to have my first experience in the Software development. That is why I am looking for a working student compatible with my studies as a developer.",
     },
