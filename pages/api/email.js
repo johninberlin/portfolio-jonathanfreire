@@ -20,7 +20,7 @@ export default async function email(req, res) {
       }
     });
     res.status(200).send('Message sent successfully.')
-  }catch(e){
+  }catch(error){
     console.log('ERROR', error)
     res.status(400).send('Message not sent.')
   }

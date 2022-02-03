@@ -22,7 +22,6 @@ export default function Works(){
                         <Image
                         src="https://res.cloudinary.com/ddjovluur/image/upload/v1643727233/portfolio/social-art_ri7fow.png"    
                         alt="social-art"
-                        priority="true"
                         layout="fill"
                         objectFit="contain"
                         quality={100}
@@ -35,7 +34,6 @@ export default function Works(){
                         <Image
                         src="https://res.cloudinary.com/ddjovluur/image/upload/v1643727231/portfolio/time-quiz_drc3dt.png"    
                         alt="time-quiz"
-                        priority="true"
                         layout="fill"
                         objectFit="cover"
                         quality={100}
