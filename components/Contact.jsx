@@ -86,7 +86,7 @@ export default function Contact(){
                 <label>
                     <input type="checkbox" checked={checkedPrivacyPolicy} onChange={handleCheckedPrivacyPolicy}/>
                     {" " + t.checkboxPrivacyPolicy.text + " "}
-                    <Link href="/">
+                    <Link href="/privacy-policy">
                         <a className={styles.linkPrivacyPolicy}>{t.checkboxPrivacyPolicy.link}</a>
                     </Link>
                     .
