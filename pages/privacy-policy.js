@@ -330,12 +330,6 @@ export default function Home() {
                             </p>
                         </li>
                     </ol>
-                    {/* <p>
-                        {`Privacy Policy generated with`}
-                        <a
-                            target="_blank"
-                            href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW">CookieYes</a>.
-                    </p> */}
                 </div>
             </div>
         </Layout>
