@@ -335,8 +335,8 @@ export default function Home() {
                         <a
                             target="_blank"
                             href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW">CookieYes</a>.
-                    </p>
-                </div> */}
+                    </p> */}
+                </div>
             </div>
         </Layout>
     </div>
