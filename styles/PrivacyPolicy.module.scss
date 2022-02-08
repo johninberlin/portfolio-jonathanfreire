@@ -7,11 +7,17 @@
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    h2,h3{
+    color: #676767;
+    h2,h3, h4{
         color: #4a4a4a;
+        margin: 45px auto 10px;
     }
     p{
-        color: #676767;
+        margin: 10px 0;
+    }
+    li{
+        margin: 10px 0;
+        line-height: 1.4rem;
     }
 }
 // PrivacyPolicyItem
