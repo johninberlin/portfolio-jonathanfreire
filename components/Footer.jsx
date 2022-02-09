@@ -11,6 +11,10 @@ export default function Footer(){
     const router = useRouter();
     const {locale} = router;
     const t = locale === "en" ? en.footer : de.footer;
+    const handleCookieSettings = (e)=> {
+        e.preventDefault();
+        window.cookiehub.openSettings();
+      }
 
     return <div id="footer" className={styles.root}>
         <div className={styles.container}>
@@ -18,10 +22,11 @@ export default function Footer(){
                 <p>{t.message.firstPart} <FontAwesomeIcon icon={faHeart} className={styles.iconHeart} /> {t.message.secondPart}</p>
             </div>
             <div className={styles.content}>
-                <div>
+                <div className={styles.policy}>
                     <p>
                         © 2022 Jonathan Freire | <Link href="/privacy-policy"><a>Privacy policy</a></Link>
                     </p>
+                    <p className={styles.cookieSettings}><a href="" onClick={handleCookieSettings}>Cookie settings</a></p>
                 </div>
                 <div className={styles.socialMedia}>
                     <span>

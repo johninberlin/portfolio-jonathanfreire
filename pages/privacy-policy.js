@@ -4,7 +4,7 @@ import styles from "../styles/PrivacyPolicy.module.scss"
 import {useRouter} from "next/router"
 import de from "../locales/de"
 import en from "../locales/en"
-import PrivacyPolicyItem from '../components/PrivacyPolicyItem'
+import CookieItem from '../components/CookieItem'
 
 export default function Home() {
     const router = useRouter();
@@ -15,6 +15,11 @@ export default function Home() {
     const privacy = locale === "en"
         ? en.privacyPolicy
         : de.privacyPolicy;
+
+    const handleCookieSettings = (e)=> {
+      e.preventDefault();
+      window.cookiehub.openSettings();
+    }
     return (<div>
         <Head>
             <title>Jonathan Freire</title>
@@ -31,7 +36,7 @@ export default function Home() {
             <div className={styles.root}>
                 <div className={styles.container}>
                     <h2>Privacy Policy</h2>
-                    <span>{`Last Updated On 08-Feb-2022`}</span>
+                    <span>{`Last Updated On 09-Feb-2022`}</span>
                     {/* INTRODUCTION */}
                     <h4>{`Introduction`}</h4>
                     <p>{`This privacy policy ("Policy") explains how we process your
@@ -296,17 +301,166 @@ export default function Home() {
                     </p>
                     
                     {/* COOKIES */}
+                    <div className={styles.cookieSection}>
                     <h4>
                         {`Cookies`}
                     </h4>
-                    <p>
+                    <ol>
+                      {/* CONSENT COOKIES */}
+                      <li>
+                        <h5>{`Consent`}</h5>
+                        <p>{`By accepting our use of cookies, apart from necessary cookies, you consent to our use of cookies as described under "Types of cookies and how we use them" below. You may at any time change or withdraw your cookie consent - See the section “How you can change your cookie settings, incl. opting out” below.`}</p>
+                      </li>
+                      {/* WHAT DO I NEED TO KNOW ABOUT COOKIES */}
+                      <li>
+                        <h5>{`What do I need to know about cookies?`}</h5>
+                        <p>{`There are different types of cookies and they are used for different purposes.`}</p>
+                        <p>{`Below you can read about what a cookie is, the difference between first and third party cookies and session cookies vs. persistent cookies and what types of cookies we use on our website and why.`}</p>
+                      </li>
+                      {/* WHAT IS A COOKIE */}
+                      <li>
+                        <h5>{`What is a cookie?`}</h5>
+                        <p>{`A cookie is a small piece of data that a website stores on your device when you visit it and which is then read when you later revisit the site. The word "cookies" in this policy and the consent also refers to other forms of automatic collection of data, e.g. Flash-cookies (Local Shared Objects), Web Storage (HTML5), Javascripts or cookies placed by other software.`}</p>
+                        <p>{`A cookie may contain information about the website itself, a unique identifier that allows the site to recognise your web browser when you return to the website, additional data that serves the purpose of the cookie, and the lifespan of the cookie itself.`}</p>
+                        <p>{`The word "cookies" or "cookie data" also covers information about IP and MAC addresses and other information about your device collected by said technologies.`}</p>
+                        <p>{`Cookies are used to enable certain features (e.g. logging in), to track site usage (e.g. analytics), to store your user settings (e.g. timezone, notification preferences), and to personalise your content (e.g. advertising, language).`}</p>
+                      </li>
+                      {/* SESSION COOKIES VS. PERSISTENT COOKIES */}
+                      <li>
+                        <h5>{`Session cookies vs. persistent cookies`}</h5>
+                        <p>{`Session cookies only last as long as your online session. This means that they will disappear from your computer or device when you close your browser. They are therefore also sometimes referred to as temporary cookies. For example, session cookies are used to remember what a user put in their basket when they are browsing a website.`}</p>
+                        <p>{`Persistent cookies are different. These cookies are sometimes called permanent cookies.  They will stay on your computer or device after you close your browser. These types of cookies will expire according to the time specified in the cookie. You can see the specific duration of each persistent cookie below.`}</p>
+                      </li>
+                      {/* WHAT'S THE DIFFERENCE BETWEEN FIRST AND THIRD PARTY COOKIES */}
+                      <li>
+                        <h5>{`What’s the difference between first and third party cookies?`}</h5>
+                        <p>{`First party cookies are cookies that are set by the website that you are visiting and it's only this website that can access and read these cookies.`}</p>
+                        <p>{`Third party cookies are set by someone other than the owner of the website you’re visiting. As an example, some pages have content from other sites like YouTube. YouTube may set their own cookies on your browser when you play the video from YouTube. Cookies set by other sites and companies (i.e. third parties) can be used to track you on other websites that use the same third-party service.`}</p>
+                        <p>{`We may engage third parties to assist with maintenance, operation, creation or functionality of our website, e.g. analytics providers and content partners. We grant these third parties’ access to selected information to perform specific tasks on our behalf.`}</p>
+                        <p>{`We are, as a general rule, joint controller with providers of third-party cookies for the collection of personal data via such cookies and the disclosure to the provider. The provider of third-party cookies is data controller for the processing taking place after receiving the personal data from us. `}</p>
+                        <p>{`We recommend reading the provider's privacy policy which can be found through links in the tables below, where you can also see which cookies on our website are first party cookies and third-party cookies.`}</p>
+                      </li>
+                      {/* TYPES OF COOKIES AND HOW WE USE THEM */}
+                      <li>
+                        <h5>{`Types of cookies and how we use them`}</h5>
+                        <ul>
+                          {/* NECESSARY COOKIES */}
+                          <li>
+                            <h6>{`Necessary cookies`}</h6>
+                            <p>{`Necessary cookies are required to provide core functionality. The website won't function properly without these cookies and they are enabled by default and cannot be disabled.`}</p>
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Hostname</th>
+                                  <th>Path</th>
+                                  <th>Expiry</th>
+                                </tr>
+                              </thead>
 
-                        {`To learn more about how we use these and your choices in relation to these
-                        tracking technologies, please refer to our`}
-                        {/* <a href="https://www.jonathanfreire.com/cookie-policy"> */}
-                        {`Cookie Policy.`}
-                        {/* </a> */}
-                    </p>
+                              <tbody>
+                                <CookieItem 
+                                  name={`__Host-next-auth.csrf-token `}
+                                  hostname={`socialart.jonathanfreire.com`}
+                                  path={`/`}
+                                  expiry={`Session`}
+                                  description={`Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.`}
+                                />
+                                <CookieItem 
+                                  name={`__Secure-next-auth.callback-url`}
+                                  hostname={`socialart.jonathanfreire.com`}
+                                  path={`/`}
+                                  expiry={`Session`}
+                                  description={`Used in order to detect spam and improve the website's security.`}
+                                />
+                                <CookieItem 
+                                  name={`nextauth.message`} 
+                                  hostname={`socialart.jonathanfreire.com`}
+                                  expiry={`Persistent`}
+                                  description={`Preserves users states across page requests.`}
+                                />
+                                <CookieItem 
+                                  name={`__Host-next-auth.csrf-token`}
+                                  hostname={`timequiz.jonathanfreire.com`}
+                                  path={`/`}
+                                  expiry={`Session`}
+                                  description={`Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.`}
+                                />
+                                <CookieItem 
+                                  name={`__Secure-next-auth.callback-url`}
+                                  hostname={`timequiz.jonathanfreire.com`}
+                                  path={`/`}
+                                  expiry={`Session`}
+                                  description={`Used in order to detect spam and improve the website's security.`}
+                                />
+                                <CookieItem 
+                                  name={`pusherTransportTLS`} 
+                                  hostname={`timequiz.jonathanfreire.com`}
+                                  expiry={`Persistent`}
+                                  description={`Technical cookie that synchronizes the website and the CMS. This is used to update the website.`}
+                                />
+                                <CookieItem 
+                                  name={`nextauth.message`}
+                                  hostname={`timequiz.jonathanfreire.com`}
+                                  expiry={`Persistent`}
+                                  description={`Preserves users states across page requests.`}
+                                />
+                                <CookieItem 
+                                  name={`cookiehub`}
+                                  hostname={`.jonathanfreire.com`}
+                                  path={`/`}
+                                  expiry={`365 days`}
+                                  description={`Used by CookieHub to store information about whether visitors have given or declined the use of cookie categories used on the site.`}
+                                />
+                              </tbody>
+                            </table>
+                          </li>
+                          <li>
+                            <h6>{`Preferences cookies`}</h6>
+                            <p>{`Preference cookies enables the web site to remember information to customize how the web site looks or behaves for each user. This may include storing selected currency, region, language or color theme.`}</p>
+                            <p className={styles.withoutCookies}>{`Currently, we do not use cookies in this cookie category.`}</p>
+                          </li>
+                          <li>
+                            <h6>{`Analytical cookies`}</h6>
+                            <p>{`Analytical cookies gather statistics. We use this information to make our website even better. The information collected via the analytical cookies track how you use our website during your visit. It helps us understand visitor usage patterns, identify, and diagnose problems or errors you may encounter, and make better strategic decisions in improving the website experience.`}</p>
+                            <p>{`We will only set analytical cookies on your device if you give us your consent.`}</p>
+                            <p className={styles.withoutCookies}>{`Currently, we do not use cookies in this cookie category.`}</p>
+                          </li>
+                          <li>
+                            <h6>{`Marketing cookies`}</h6>
+                            <p>{`Marketing cookies are used in determining what promotional content is more relevant and appropriate to you and your interests. Websites may use them to deliver targeted advertising or to limit the number of times you see an advertisement. This helps companies improve the effectiveness of their campaigns, and the quality of content presented to you. These cookies may be set by the website you’re visiting (first party) or by third-party services. Marketing cookies set by a third-party service may be used to track you on other websites that use the same third-party service.`}</p>
+                            <p className={styles.withoutCookies}>{`Currently, we do not use cookies in this cookie category.`}</p>
+                          </li>
+                          <li>
+                            <h6>{`Other cookies`}</h6>
+                            <p>{`The cookies in this category have not yet been categorized and the purpose may be unknown at this time.`}</p>
+                            <p className={styles.withoutCookies}>{`Currently, we do not use cookies in this cookie category.`}</p>
+                          </li>
+                        </ul>
+                        
+                      </li>
+                      {/* HOW YOU CAN CHANGE YOUR COOKIE SETTINGS */}
+                      <li>
+                        <h5>{`How you can change your cookie settings, incl. opting out`}</h5>
+                        <p>{`As part of our cookie solution, we always ask for your consent to cookies, except for necessary cookies, before placing cookies on your device.`}</p>
+                        <p>{`We also always give you the option to change your consent. If you at one point gave consent to non-necessary cookies on our website, you can always change which cookies you will give consent to. Just look for the "Cookie settings" on the footer of our website or the following link. If you press "Cookie settings", your cookie settings will appear, allowing you to always change your settings and reject cookies.`}</p>
+                        <a href="" onClick={handleCookieSettings}>
+                          {`Cookie settings`}
+                        </a>
+                        <p>{`Listed below are the links to the support documents on how to manage and delete cookies from the major web browsers.`}</p>
+                        <p>{`Chrome: `}<a href="https://support.google.com/accounts/answer/32050" target="_blank" rel="noreferrer">{`https://support.google.com/accounts/answer/32050`}</a></p>
+                        <p>{`Safari: `}<a href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank" rel="noreferrer">{`https://support.apple.com/en-in/guide/safari/sfri11471/mac`}</a></p>
+                        <p>{`Firefox: `}<a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US" target="_blank" rel="noreferrer">{`https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US`}</a></p>
+                        <p>{`Internet Explorer: `}<a href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc" target="_blank" rel="noreferrer">{`https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc`}</a></p>
+                        <p>{`If you are using any other web browser, please visit your browser’s official support documents.`}</p>
+                      </li>
+                      {/* HOW OFTEN WILL WE UPDATE THIS COOKIE NOTICE */}
+                      <li>
+                          <h5>{`How often will we update this Cookie Notice?`}</h5>
+                          <p>{`We may update this Cookie section from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal or regulatory reasons. Please therefore re-visit this Policy regularly to stay informed about our use of cookies and related technologies. The date at the top of this Policy indicates when it was last updated.`}</p>
+                      </li>
+                    </ol>
+                    </div>
 
                     {/* CHILDREN AND OUR SERVICES */}
                     <h4>{`Children and our services`}</h4>
