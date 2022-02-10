@@ -31,12 +31,12 @@ export default function Home() {
             refTitle="/"
             firstRef="/#works"
             firstName={t.firstName}
-            secondRef="#contact"
+            secondRef="/#contact"
             secondName={t.secondName}>
             <div className={styles.root}>
                 <div className={styles.container}>
                     <h2>Privacy Policy</h2>
-                    <span>{`Last Updated On 09-Feb-2022`}</span>
+                    <span>{`Last Updated On 10-Feb-2022`}</span>
                     {/* INTRODUCTION */}
                     <h4>{`Introduction`}</h4>
                     <p>{`This privacy policy ("Policy") explains how we process your
@@ -290,7 +290,7 @@ export default function Home() {
                     <h4>
                       {`Chat app for users (timequiz.jonathanfreire.com)`}
                     </h4>
-                    <p>{`You can communicate with other users using the chat in the app located at timequiz.jonathanfreire.com. You can not use this chat if you are under the age of 16.`}</p>
+                    <p>{`You can communicate with other users using the chat in the app located at timequiz.jonathanfreire.com.`}</p>
                     <p>{`In this app, you can play the game of questions with other users. The purpose of the chat is to talk about the category of questions. Also, you can talk about the answers or the points. We encourage you not to use this chat for other cases and not share personal data.`}</p>
                     <p>{`We are the data controller. The shared messages through this chat are not stored in any database. We use secure connections provided by Pusher as our real-time messaging service. Pusher processes the encrypted data according to our processing criteria. Read the `}<a href="https://pusher.com/legal/privacy-policy" target="_blank" rel="noreferrer">{`Pusher's privacy policy`}</a></p>
 
