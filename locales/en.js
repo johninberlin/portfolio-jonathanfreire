@@ -27,8 +27,8 @@ const en = {
             "placeholder" : "Let's talk"
         },
         "checkboxPrivacyPolicy" : {
-            "text" : "I accept the",
-            "link" : "Privacy policy"
+            "text" : "I understand and agree with",
+            "link" : "Jonathan Freire's privacy policy."
         },
         "errorForm" : {
             "successfully" : "Your message has been sended successfully.",
