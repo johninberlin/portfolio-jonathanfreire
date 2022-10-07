@@ -25,9 +25,6 @@ export default function AboutMe(){
                 <p>
                     {t.p3}
                 </p>
-                <p>
-                    {t.p4}
-                </p>
             </div>
         </div>
     </div>

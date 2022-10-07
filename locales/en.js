@@ -8,9 +8,8 @@ const en = {
     "aboutMe": {
         "title" : "Hello, I'm Jonathan.",
         "p1" : "I am a student of Engineering Informatics.",
-        "p2" : "Spanish is my mother language but also I speak English B2 and German B1.",
-        "p3" : 'Last year, I did a "Web development bootcamp" on Udemy where I learnt a MERN stack. After this course I was learning more technologies like Next.js by myself only reading their documentations.',
-        "p4" : "Now, I am ready to have my first experience in the Software development. That is why I am looking for a working student compatible with my studies as a developer.",
+        "p2" : 'Also, I did a "Web development bootcamp" on Udemy where I learnt a MERN stack. After this course I was learning more technologies like Next.js by myself.',
+        "p3" : "Now, I am ready to have my first experience in the Software development. That is why I am looking for a working student compatible with my studies as a developer.",
     },
     "contact": {
         "greeting" : {
@@ -66,13 +65,13 @@ const en = {
         "otherTech" : {
             "title" : "More Tech",
             "description" : "Databases, version control systems and some tech skills learned in the University are included in this section.",
-            "skills" : ["MongoDB with mongoose.js", "Git", "Github", "Deployment (Heroku or Vercel)", "C-Programming", "JAVA", "Basics of SQL"]
+            "skills" : ["MongoDB with mongoose.js", "Git", "Github", "Deployment (Heroku or Vercel)", "C-Programming", "JAVA", "SQL"]
         }
     },
     "works" : {
         "title" : {
             "h3" : "Recent projects",
-            "p" : "These projects were well thought out in detail to entertain the visitors. Every project is available only in English. They also include a frequently questions section about how it was made. I hope you enjoy them."
+            "p" : "These projects were well thought out in detail to entertain the visitors. They also include a frequently questions section about how it was made. I hope you enjoy them."
         }
     },
     "privacyPolicy" : {
