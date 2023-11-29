@@ -7,9 +7,9 @@ const en = {
     },
     "aboutMe": {
         "title" : "Hello, I'm Jonathan.",
-        "p1" : "I am a student of Engineering Informatics.",
-        "p2" : 'Also, I did a "Web development bootcamp" on Udemy where I learnt a MERN stack. After this course I was learning more technologies like Next.js by myself.',
-        "p3" : "Now, I am ready to have my first experience in the Software development. That is why I am looking for a working student compatible with my studies as a developer.",
+        "p1" : "Passionate about web development, with experience as a freelancer on various projects.",
+        "p2" : 'Currently, I am a Informatics Engineering student, dedicating my free time to leading a personal project focused on stock management for the retail sector.',
+        "p3" : "I am looking for an internship as a Full Stack Web Developer, where I can apply my knowledge and learn new technologies.",
     },
     "contact": {
         "greeting" : {
@@ -48,7 +48,7 @@ const en = {
     "homeMain": {
         "title" : {
             "hi" : "Hi you,",
-            "jr" : "I am a Jr.",
+            "jr" : "I am a",
             "strong" : "Full Stack Developer",
             "base" : "based in Berlin"
         }
@@ -56,21 +56,21 @@ const en = {
     "skills" : {
         "frontend" : {
             "description" : "I enjoy giving life to my ideas on creative projects. I create fully responsive and custom designed websites.",
-            "skills" : ["React.js", "JavaScript ES6", "HTML", "CSS", "SASS", "Bootstrap", "Material-UI", "EJS", "jQuery"]
+            "skills" : ["React.js", "Next.js", "Typescript", "JavaScript", "Mantine", "HTML", "CSS", "SASS", "Apollo client", "NextAuth.js"]
         },
         "backend" : {
             "description" : "This is my favourite part. I like designing and building the structure of software applications.",
-            "skills" : ["Node.js", "Next.js", "Express.js", "Pusher.js", "NextAuth.js", "Passport.js", "SWR", "RESTful API", "npm"]
+            "skills" : ["Node.js", "Nest.js", "Express.js", "Passport.js", "RESTful APIs", "TRPC", "GraphQL", "Apollo server"]
         },
         "otherTech" : {
             "title" : "More Tech",
             "description" : "Databases, version control systems and some tech skills learned in the University are included in this section.",
-            "skills" : ["MongoDB with mongoose.js", "Git", "Github", "Deployment (Heroku or Vercel)", "C-Programming", "JAVA", "SQL"]
+            "skills" : ["PostgreSQL", "TypeORM", "Prisma", "Docker", "Git & Github", "Microservices"]
         }
     },
     "works" : {
         "title" : {
-            "h3" : "Recent projects",
+            "h3" : "Projects",
             "p" : "These projects were well thought out in detail to entertain the visitors. They also include a frequently questions section about how it was made. I hope you enjoy them."
         }
     },
